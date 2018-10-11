@@ -208,8 +208,8 @@ system("pause");
 system("cls");
 return 0;
 }
-int main(){
-    int y;
+int Two_Players(){
+int y;
     init();
     info();
     draw(0);
@@ -226,5 +226,24 @@ int main(){
     draw(y);
     logic(y);
     }while(y!=-1);
+    return 0;
+}
+int Single_Player(){
+    cout<<"\n\n\n\n\n\t\t\t\t\tVs Computer Mode Is Not Available For Some Time.\n\n\n\n\n\n\n\n\n\n\n";
+    system("pause");
+    system("cls");
+    return 0;}
+int main(){
+int tval;
+    do{
+
+    cout<<"\n\n\n\t\t\t\t\t\tVs Computer Enter (1)\n\t\t\t\t\t\tVs Person Enter (2)\n\t\t\t\t\t\t\t";
+    cin>>tval;
+    system("cls");
+    if(tval==2)
+    Two_Players();
+    else
+    Single_Player();
+    }while(tval!=0);
     return 0;
 }
